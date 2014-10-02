@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Viewport and resolution dependent responsive images with srcset</title>
+		<style>body{margin:0}img{width:100%}</style>
+		<script src="picturefill.min.js" async></script>
+	</head>
+
+	<body>
+		<img src="images/deadpool-200.jpg" alt="Deadpool" srcset="images/deadpool-200.jpg 200w, images/deadpool-400.jpg 400w, images/deadpool-600.jpg 600w, images/deadpool-800.jpg 800w, images/deadpool-1000.jpg 1000w">
+
+		<p><small>Image credit: http://corticus.deviantart.com/art/Deadpool-158204538</small></p>
+	</body>
+</html>

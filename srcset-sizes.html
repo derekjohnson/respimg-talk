@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Design breakpoints with srcset and sizes</title>
+		<style>
+			body{background:#272822;margin:0}
+			main{width:95%;max-width:75em;margin:0 auto}
+			img{vertical-align:middle;max-width:100%}
+			small{overflow-wrap:break-word}
+			@media(min-width:38em){img{width:50%}}
+			@media(min-width:60em){img{width:33.3333333%}}
+			@media(min-width:74em){img{width:25%}}
+		</style>
+		<script src="picturefill.min.js" async></script>
+	</head>
+
+	<body>
+		<main role="main">
+			<img src="images/podiceps-cristatus.jpg" alt="Great Crested Grebe"
+					srcset="images/podiceps-cristatus-300.jpg 300w,
+							images/podiceps-cristatus-400.jpg 400w,
+							images/podiceps-cristatus-600.jpg 600w,
+							images/podiceps-cristatus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/carduelis-carduelis-300.jpg" alt="Goldfinch"
+					srcset="images/carduelis-carduelis-300.jpg 300w,
+							images/carduelis-carduelis-400.jpg 400w,
+							images/carduelis-carduelis-600.jpg 600w,
+							images/carduelis-carduelis-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/alcedo-atthis.jpg" alt="Kingfisher"
+					srcset="images/alcedo-atthis-300.jpg 300w,
+							images/alcedo-atthis-400.jpg 400w,
+							images/alcedo-atthis-600.jpg 600w,
+							images/alcedo-atthis-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/emberiza-citrinella-300.jpg" alt="Yellowhammer"
+					srcset="images/emberiza-citrinella-300.jpg 300w,
+							images/emberiza-citrinella-400.jpg 400w,
+							images/emberiza-citrinella-600.jpg 600w,
+							images/emberiza-citrinella-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/aegithalos-caudatus-300.jpg" alt="Long tailed tit"
+					srcset="images/aegithalos-caudatus-300.jpg 300w,
+							images/aegithalos-caudatus-400.jpg 400w,
+							images/aegithalos-caudatus-600.jpg 600w,
+							images/aegithalos-caudatus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/loxia-curvirostra-300.jpg" alt="Crossbill"
+					srcset="images/loxia-curvirostra-300.jpg 300w,
+							images/loxia-curvirostra-400.jpg 400w,
+							images/loxia-curvirostra-600.jpg 600w,
+							images/loxia-curvirostra-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/regulus-regulus-300.jpg" alt="Goldcrest"
+					srcset="images/regulus-regulus-300.jpg 300w,
+							images/regulus-regulus-400.jpg 400w,
+							images/regulus-regulus-600.jpg 600w,
+							images/regulus-regulus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/vanellus-vanellus-300.jpg" alt="Lapwing"
+					srcset="images/vanellus-vanellus-300.jpg 300w,
+							images/vanellus-vanellus-400.jpg 400w,
+							images/vanellus-vanellus-600.jpg 600w,
+							images/vanellus-vanellus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"><!--
+
+			--><img src="images/asio-otus-300.jpg" alt="Long eared owl"
+					srcset="images/asio-otus-300.jpg 300w,
+							images/asio-otus-400.jpg 400w,
+							images/asio-otus-600.jpg 600w,
+							images/asio-otus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw">
+		</main>
+
+		<footer role="contentinfo">
+			<h2>Image credits</h2>
+
+			<ul>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/2/27/Podiceps_cristatus_2_-_Lake_Dulverton.jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/7/7c/Carduelis_carduelis_close_up.jpg</small></li>
+				<li><small>https://c1.staticflickr.com/9/8116/8655741934_8c48c0c1eb_b.jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/c/cc/Common_Kingfisher_Alcedo_atthis.jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/6/6c/Long-tailed_Tit_Aegithalos_caudatus.jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/4/49/Red_Crossbills_(Male).jpg</small></li>
+				<li><small>http://farm9.staticflickr.com/8519/8559589268_7a8b00e811_o.jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/b/b5/Long_Eared_Owl_(9438319240).jpg</small></li>
+				<li><small>http://upload.wikimedia.org/wikipedia/commons/2/2f/Northern-Lapwing-Vanellus-vanellus.jpg</small></li>
+			</ul>
+		</footer>
+	</body>
+</html>
