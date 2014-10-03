@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Type switching with picture</title>
+		<style>img{max-width:100%}</style>
+		<script src="picturefill.min.js" async></script>
+	</head>
+
+	<body>
+		<picture>
+			<source srcset="images/emberiza-citrinella.jpg" type="image/jpeg">
+			<source srcset="images/emberiza-citrinella.webp" type="image/webp">
+			<img src="images/emberiza-citrinella.jpg" alt="Yellowhammer">
+		</picture>
+	</body>
+</html>
