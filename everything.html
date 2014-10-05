@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Type switching with picture</title>
+		<style>
+			img{max-width:100%}
+			@media(min-width:38em){img{width:50%}}
+			@media(min-width:60em){img{width:33.3333333%}}
+			@media(min-width:74em){img{width:25%}}
+		</style>
+		<script src="picturefill.min.js" async></script>
+	</head>
+
+	<body>
+		<picture>
+			<source srcset="images/asio-otus-300.webp 300w,
+							images/asio-otus-400.webp 400w,
+							images/asio-otus-600.webp 600w,
+							images/asio-otus-800.webp 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"
+					type="image/webp">
+
+			<source srcset="images/asio-otus-300.jpg 300w,
+							images/asio-otus-400.jpg 400w,
+							images/asio-otus-600.jpg 600w,
+							images/asio-otus-800.jpg 800w"
+					sizes="(min-width:78.947em) 18.75em,
+						   (min-width:74em) 23.75vw,
+						   (min-width:60em) 31.6666667vw,
+						   (min-width:38em) 47.5vw,
+						   95vw"
+					type="image/jpeg">
+
+			<img src="images/asio-otus-300.jpg" alt="Long eared owl">
+		</picture>
+	</body>
+</html>
